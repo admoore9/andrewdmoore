@@ -1,93 +1,98 @@
 <!DOCTYPE HTML>
+<meta charset="UTF-8">
 <html>
     <head>
+        <script src="https://use.fontawesome.com/531079e8f2.js"></script>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles.css">
         <title>Andrew D Moore</title>
     </head>
     <body>
-        <div>
-            <header>
-                <span><img src="andrew.jpg" width="150px" height="auto"/></span>
-                <h1>Andrew D Moore</h1>
-                <p>Software Engineer</p>
-            </header>
+        <header>
+            <h1>Andrew D Moore</h1>
 
             <nav>
                 <ul>
                     <li>About Me</li>
-                    <li>Resume</li>
                     <li>Portfolio</li>
+                    <li>Contact</li>
                 </ul>
             </nav>
+        </header>
 
-            <div>
-                <section>
-                    <div>
-                        <header>
-                            <h2>About Me</h2>
-                        </header>
-                        <p>I’m a software engineer at Bunchball, the industry leader in gamification.
-                        We focus on using big data to incentivize millions of people to take
-                        action every day. I work with a tight knit team and use cutting edge
-                        technology to bring innovative products to our customers.</p>
-                    </div>
-                </section>
+        <main>
+            <section>
+                <figure class="me-photo" >
+                    <img src="images/andrew.jpg" alt="Image of me"/>
+                </figure>
+                <div class="me-details">
+                    <p>I’m a software engineer at Bunchball, the industry leader in gamification.
+                    We focus on using big data to incentivize millions of people to take
+                    action every day. I work with a tight knit team and use cutting edge
+                    technology to bring innovative products to our customers.</p>
+                </div>
+            </section>
 
-                <section>
-                    <div>
-                        <header>
-                            <h2>Resume</h2>
-                        </header>
-                    </div>
-                </section>
+            <section class="project">
+                <div class="project-title-details">
+                    <h3>
+                        <a href="https://github.com/admoore9/cs309t13">Intramural Management System</a>
+                    </h3>
+                    <p>
+                        A web application used to improve a university's intramural sports system.
+                        The back-end was built with Java and serves JavaServer Pages to the client.
+                        The application allows for a number of different actions including creating
+                        tournaments, sending messages to users, reporting game scores, and visualization
+                        of dynamically generated brackets.
+                    </p>
+                </div>
+                <div class="project-photo">
+                    <img src="images/intramurals.png" alt="Image of intramural home page"/>
+                </div>
+            </section>
 
-                <section>
-                    <header>
-                        <h2>Portfolio</h2>
-                    </header>
-                    <ul>
-                        <li>
-                            <h3><a href="https://github.com/admoore9/cs309t13">Intramural Sports Management Application</a></h3>
-                            <span><img src="intramurals.png" width="auto" height="200px"/></span>
-                            <p>A web application used to improve a university's intramural sports system.
-                            The back-end was built with Java and serves JavaServer Pages to the client.
-                            The front-end uses Bootstrap and Javascript. The application allows for a number
-                            of different actions including creating tournaments and matches, sending messages to users,
-                            reporting game scores, and visualization of dynamically generated brackets.</p>
-                        </li>
-                        <li>
-                            <h3><a href="https://github.com/admoore9/ToDo.React">ToDo</a></h3>
-                            <span><img src="todo.png" width="auto" height="200px"/></span>
-                            <p>A to-do list web application built with ReactJS and a python server.</p>
-                        </li>
-                        <li>
-                            <h3><a href="https://github.com/admoore9/Virtual-Chess">Virtual Chess</a></h3>
-                            <span><img src="metal.jpg" width="auto" height="200px"/><img src="chess.png" width="auto" height="200px"/></span>
-                            <p>
-                                An interactive virtual reality chess application built for
-                                <a href="http://www.vrac.iastate.edu/facilities/metal/">METaL</a>. The application
-                                allows two users to play a chess match in 3D using a Wiimote as a controller. Features
-                                include pieces that snap into place, smart piece selection, undo ability, and sound effects.
-                            </p>
-                        </li>
-                    </ul>
-                </section>
-            </div>
+            <section class="project">
+                <div class="project-title-details">
+                    <h3>
+                        <a href="https://github.com/admoore9/ToDo.React">ToDo</a>
+                    </h3>
+                    <p>
+                        A to-do list web application built with ReactJS and python server.
+                    </p>
+                </div>
+                <div class="project-photo">
+                    <img src="images/todo.png" alt="Image of todo app"/>
+                </div>
+            </section>
 
-            <footer id="footer">
-                <section>
-                    <h2>Contact</h2>
-                    <dl class="alt">
-                        <dt>Email</dt>
-                        <dd><a href="#">admoore9@gmail.com</a></dd>
-                    </dl>
-                    <ul class="icons">
-                        <li><a href="https://www.linkedin.com/in/admoore9"><span>LinkedIn</span></a></li>
-                        <li><a href="https://github.com/admoore9"><span>GitHub</span></a></li>
-                        <li><a href="https://twitter.com/AndrewDMoore"><span>Twitter</span></a></li>
-                        <li><a href="https://www.instagram.com/admoore9/"><span>Instagram</span></a></li>
-                    </ul>
-                </section>
-            </footer>
-        </div>
+            <section class="project">
+                <div class="project-title-details">
+                    <h3>
+                        <a href="https://github.com/admoore9/Virtual-Chess">Virtual Chess</a>
+                    </h3>
+                    <p>
+                        An interactive virtual reality chess application built for
+                        <a href="http://www.vrac.iastate.edu/facilities/metal/">METaL</a>. The application
+                        allows two users to play a three dimensional chess match using a Wiimote as a controller.
+                        Features include pieces that snap into place, smart piece selection, undo ability,
+                        and sound effects.
+                    </p>
+                </div>
+                <div class="project-photo">
+                    <img src="images/chess.png" alt="Image of chess board"/>
+                </div>
+            </section>
+
+            <span class="contact">
+                <a href="mailto:admoore9@gmail.com" target="_blank"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/admoore9" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                <a href="https://github.com/admoore9" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/AndrewDMoore" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/admoore9/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+            </span>
+        </main>
+
+        <footer>
+        </footer>
     </body>
 </html>
