@@ -8,14 +8,6 @@ header {
     padding-bottom: 1%;
 }
 
-section {
-    background-color: #ffffff;
-    width: 65%;
-    margin: 0 auto 1% auto;
-    border-radius: 10px;
-    padding: .5%;
-}
-
 h1 {
     font-size: 3em;
     color: #8DB5B2;
@@ -47,6 +39,14 @@ nav ul li {
     margin: 0 .5% 0 .5%;
 }
 
+.me, .project {
+    background-color: #ffffff;
+    width: 70%;
+    margin: 0 auto 1% auto;
+    border-radius: 10px;
+    padding: .5%;
+}
+
 .me-photo {
     width: 25%;
     margin: 0 auto 0 auto;
@@ -56,15 +56,21 @@ nav ul li {
     padding-bottom: 1%;
 }
 
+.project {
+    display: flex;
+}
+
+.project:nth-child(even) .project-title-details {
+    order: 1;
+}
+
 .project-title-details {
-    float: left;
     width: 50%;
 }
 
 .project-photo {
     width: 50%;
     margin: 0 auto 0 auto;
-    display: inline-block;
 }
 
 .contact {
@@ -77,25 +83,26 @@ nav ul li {
     color: #8DB5B2;
 }
 
-@media screen and (max-width: 1200px) {
-    section {
-        background-color: #ffffff;
-        width: 90%;
-        margin: 0 auto 1% auto;
-        border-radius: 10px;
-        padding: .5%;
+@media screen and (max-width: 1000px) {
+    .me, .project {
+        width: 80%;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project:nth-child(even) .project-title-details {
+        order: -1;
+    }
+
+    .project-title-details {
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 900px) {
-    .project-title-details {
-        float: none;
-        width: 100%;
-    }
-
-    .project-photo {
-        width: 100%;
-        margin: 0 auto 0 auto;
-        display: block;
+@media screen and (max-width: 500px) {
+    .me, .project {
+        width: 90%;
     }
 }
